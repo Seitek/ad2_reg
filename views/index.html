@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Adoorto - Register</title>
+    <title>ADoorTo - Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -27,40 +27,45 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home
+                <a class="nav-item nav-link active" href="./index.html">Register
                     <span class="sr-only">(current)</span>
                 </a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                <a class="nav-item nav-link" href="./login.html">Login</a>
+                <a class="nav-item nav-link" href="./overview.html">Overview</a>
             </div>
         </div>
     </nav>
 
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="/submit" method="POST">
+                    <fieldset>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" autofocus />
+                        <br/>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" />
+                        <br/>
+                        <label for="username">User name: </label>
+                        <input type="textbox" id="username" name="username" />
+                        <br/>
+                        <input type="submit" value="create profile" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <form action="/submit" method="POST">
-        <fieldset>
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" autofocus />
-            <br/>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" />
-            <br/>
-            <label for="username">User name: </label>
-            <input type="textbox" id="username" name="username" />
-            <br/>
-            <input type="submit" value="create profile" />
-        </fieldset>
-    </form>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
