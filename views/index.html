@@ -41,7 +41,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <!--<form action="/submit" method="POST">
+
+                <!-- <form action="/submit" method="POST">
                     <fieldset>
                         <label for="name">Name: </label>
                         <input type="text" id="name" name="name" autofocus />
@@ -54,17 +55,20 @@
                         <br/>
                         <input type="submit" value="create profile" />
                     </fieldset>
-                </form>-->
+                </form> -->
 
                 <form action="/submit" method="POST">
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group" <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Vorname Nachname" />
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
