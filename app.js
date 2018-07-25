@@ -25,15 +25,16 @@ app.use('/', express.static(__dirname + '/views'));
 
 app.post('/submit', (req,res) =>{
 
-    var name = req.body.name;
+    var password = req.body.password;
     var email = req.body.email;
-    var username = req.body.username;
+    var test = "test";
+    //var username = req.body.username;
 
     res.sendFile(path.join(__dirname+'/views/fertig.html'));
 
     con.connect((err) =>{
         if(err) throw err;
-        var sql = "INSERT INTO form (name,email,description) VALUES ('"+name+"','"+email+"','"+username+"')";
+        var sql = "INSERT INTO form (name,email,description) VALUES ('"+password+"','"+email+"','" + test +"')";
         con.query(sql, (err,result) =>{
             if(err) throw err;
             console.log("1 record inserted");
