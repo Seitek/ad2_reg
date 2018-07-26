@@ -12,10 +12,9 @@ app.use(bodyParser.json());
 
 var con = mysql.createConnection({
     host: "localhost",
-    user: "test",
+    user: "root",
     password: "",
-    database: "testnode",
-    port: "8888"
+    database: "anmeldung",
 });
 
 //app.get('/',(req,res) =>{
@@ -26,9 +25,9 @@ app.use('/', express.static(__dirname + '/views'));
 
 app.post('/submit', (req,res) =>{
 
-    var password = "test1"; //req.body.password;
-    var email = "test2"; //req.body.email;
-    var name = "test3"; //req.body.name;
+    var password = req.body.password;
+    var email = req.body.email;
+    var name = req.body.name;
 
     res.sendFile(path.join(__dirname+'/views/fertig.html'));
 
@@ -38,7 +37,6 @@ app.post('/submit', (req,res) =>{
         con.query(sql, (err,result) =>{
             if(err) throw err;
             console.log("1 record inserted");
-            res.end();
         });
     });
 
