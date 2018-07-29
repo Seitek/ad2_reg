@@ -13,7 +13,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">ADoorTo</a>
+        <a class="navbar-brand" href="#">ADoorTo <i>Test</i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,6 +28,43 @@
             </div>
         </div>
     </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <!-- <form action="/submit" method="POST">
+                    <fieldset>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" autofocus />
+                        <br/>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" />
+                        <br/>
+                        <label for="username">User name: </label>
+                        <input type="textbox" id="username" name="username" />
+                        <br/>
+                        <input type="submit" value="create profile" />
+                    </fieldset>
+                </form> -->
+
+                <form action="/submitlogin" method="POST" id="formen">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7   abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
